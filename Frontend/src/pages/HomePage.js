@@ -5,6 +5,7 @@ import { useAuth } from '../component/AuthContext';
 import { useBoardSize } from '../component/BoardsizeContext';
 import API_URL from '../component/Config';
 
+// home page
 const HomePage = () => {
   const { isAuthenticated, login, logout } = useAuth();
   const { boardSize, setBoardSize } = useBoardSize();

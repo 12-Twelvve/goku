@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavigationBar1 from '../component/NavigationBar1';
 import API_URL from '../component/Config';
 
+// signup page
 const SignupPage = () => {
   const [msg, setMsg] = useState('');
 

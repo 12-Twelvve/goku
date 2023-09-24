@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useBoardSize } from './BoardsizeContext';
 import API_URL from './Config';
 
+
 const GomokuGame = ({id}) => {
   const [gameId, setGameId] = useState(id)
   const { boardSize, setBoardSize } = useBoardSize();

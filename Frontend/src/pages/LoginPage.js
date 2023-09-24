@@ -4,6 +4,7 @@ import { useAuth } from '../component/AuthContext';
 import NavigationBar1 from '../component/NavigationBar1';
 import API_URL from '../component/Config';
 
+// login page
 const LoginPage = ({ onLogin }) => {
   const { isAuthenticated, login, logout } = useAuth();
   const [username, setUsername] = useState('');
