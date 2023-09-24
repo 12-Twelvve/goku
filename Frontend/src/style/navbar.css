@@ -1,0 +1,28 @@
+/* Add this CSS to your styles or a CSS file */
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .top-nav a:hover {
+    text-decoration: underline;
+  }
+  
