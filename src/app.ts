@@ -2,8 +2,10 @@ import { createServer } from 'http'
 import express, { Express } from 'express'
 import cors from 'cors'
 
+
 import authHandler from './handler/auth.handler'
 
+// import handler
 import {
   createGameHandler,
   getGamesHandler,
@@ -22,21 +24,21 @@ app.use(
 
 app.use(express.json())
 
-
+// simple api
 app.get('/', (req, res) => {
   res.send('Hello, Gomoku API!');
 });
 
-// user api
+// user auth api
 app.use('/api/auth', authHandler)
-// game api
+// gomuko game ap is
 app.get("/api/games", getGamesHandler);
 app.get("/api/game/:id", getGameByIdHandler);
 app.post("/api/game/create", createGameHandler);
 app.put("/api/game/:id", updateGameHandler);
 app.put("/api/game/winner/:id", updateGameWinnerHandler);
 
-
+// run server
 export const server = createServer(app)
 
 export default app
